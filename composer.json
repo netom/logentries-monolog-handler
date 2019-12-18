@@ -1,8 +1,8 @@
 {
-    "name": "logentries/logentries-monolog-handler",
+    "name": "netom/logentries-monolog-handler",
     "description": "A handler for Monolog that sends messages to Logentries.com.",
     "keywords": ["log", "logging", "monolog", "logentries", "laravel", "symfony"],
-    "homepage": "https://github.com/logentries/logentries-monolog-handler",
+    "homepage": "https://github.com/netom/logentries-monolog-handler",
     "license": "MIT",
     "authors": [
         {
@@ -12,13 +12,18 @@
         {
             "name": "Mark Lacomber",
             "email": "marklacomber@gmail.com"
+        },
+        {
+            "name": "Fábián Tamás László",
+            "email": "giganetom@gmail.com"
         }
     ],
     "require": {
-        "monolog/monolog": ">=1.4"
+        "monolog/monolog": "~2.0"
     },
     "require-dev": {
-        "mockery/mockery": "dev-master"
+        "phpunit/phpunit": "~8.5",
+        "mockery/mockery": "~1.3"
     },
     "autoload": {
         "psr-0": {

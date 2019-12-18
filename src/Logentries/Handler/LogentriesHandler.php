@@ -31,13 +31,13 @@ class LogentriesHandler extends AbstractProcessingHandler
 		parent::__construct($level, $bubble);
 	}
 
-	protected function write(array $record)
+	protected function write(array $record): void
 	{
 		$data = $this->generateDataStream($record);
 		$this->socket->write($data);
 	}
 
-	public function close()
+	public function close(): void
 	{
 		$this->socket->close();
 	}
